@@ -3,7 +3,7 @@
 Plugin Name: Upcoming Events Carousel
 Plugin URI: https://masjidsolutions.net/
 Description: A plugin to display upcoming events as a carousel using data from a secure API.
-Version: 2.0.1
+Version: 2.0.2
 Requires at least: 6.4.1
 Requires PHP: 7.2
 Author: MASJIDSOLUTIONS
@@ -29,7 +29,7 @@ $updateChecker = PucFactory::buildUpdateChecker(
 );
 
 // Set the branch (change to 'master' if that's your default branch)
-$updateChecker->setBranch('main');
+$updateChecker->setBranch('master');
 
 // Enable release assets if you plan to use GitHub releases
 $updateChecker->getVcsApi()->enableReleaseAssets();
