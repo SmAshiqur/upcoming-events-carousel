@@ -1,0 +1,74 @@
+#carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    box-sizing: border-box;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.swiper-slide h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(42 42 42);
+}
+
+.swiper-slide p {
+    color: #666;
+    text-decoration: none;
+}
+
+.swiper-slide h3 a, .swiper-slide p a {
+    text-decoration: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-color: #a5a5a53b;
+    color: white;
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 16px!important;
+    color: white;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #FF6F00;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
+    transform: scale(1.2);
+}

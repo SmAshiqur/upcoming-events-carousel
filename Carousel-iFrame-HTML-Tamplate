@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Carousel</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .carousel-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+        .swiper {
+            width: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #333;
+        }
+        .swiper-pagination-bullet-active {
+            background: #333;
+        }
+        .error-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel-container" class="carousel-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides will be inserted here by JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <!-- Your Carousel JS -->
+    <script src="carousel.js"></script>
+</body>
+</html>
